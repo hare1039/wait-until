@@ -4,7 +4,7 @@ set(HAVE_FLAG_SEARCH_PATHS_FIRST 0)
 project(wait-until)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -pthread")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 
 conan_basic_setup()
